@@ -12,5 +12,5 @@ async def fill_sample_form(address_info):
         await page.screenshot(path="filled_form.png")
         print("✅ Screenshot saved")
 
-        await page.wait_for_timeout(3000)
+        await page.wait_for_timeout(900000)
         await browser.close()
